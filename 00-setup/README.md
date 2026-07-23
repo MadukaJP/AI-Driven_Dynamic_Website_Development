@@ -38,7 +38,7 @@ Create a free account at [github.com](https://github.com) if you don't have one.
 Create a **new, empty** repository on GitHub called `building-modern-websites` (or clone this one if it was handed to you as a starter). Then on your machine:
 
 ```bash
-git clone https://github.com/<your-username>/building-modern-websites.git
+git clone https://github.com/MadukaJP/AI-Driven_Dynamic_Website_Development.git
 cd building-modern-websites
 ```
 
