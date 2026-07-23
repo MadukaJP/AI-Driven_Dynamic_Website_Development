@@ -39,7 +39,7 @@ Create a **new, empty** repository on GitHub called `building-modern-websites` (
 
 ```bash
 git clone https://github.com/MadukaJP/AI-Driven_Dynamic_Website_Development.git
-cd building-modern-websites
+cd AI-Driven_Dynamic_Website_Development
 ```
 
 This is the repo you'll work in for the rest of the course. Every session folder gets added, committed, and pushed as you complete it.
