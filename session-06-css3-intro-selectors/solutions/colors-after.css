@@ -1,0 +1,9 @@
+:root {
+  --primary: #2563eb;
+  --secondary: #7c3aed;
+}
+
+h1 { color: var(--primary); }
+a { color: var(--primary); }
+.button { background-color: var(--primary); border: 1px solid var(--secondary); }
+.badge { background-color: var(--secondary); }
