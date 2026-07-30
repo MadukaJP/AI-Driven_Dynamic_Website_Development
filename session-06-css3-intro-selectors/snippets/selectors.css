@@ -1,0 +1,29 @@
+/* Element selector */
+p { color: #333; }
+
+/* Class selector */
+.card { border: 1px solid #ddd; padding: 16px; }
+
+/* ID selector */
+#header { background: #222; color: white; }
+
+/* Descendant selector */
+.card p { font-size: 0.9rem; }
+
+/* Attribute selector */
+input[type="email"] { border-color: blue; }
+
+/* Modern: :is() groups selectors */
+:is(h1, h2, h3) { font-family: sans-serif; }
+
+/* Modern: :where() same as :is() but zero specificity */
+:where(ul, ol) { margin: 0; padding: 0; }
+
+/* Modern: :has() - style parent based on child */
+.card:has(img) { padding: 0; }
+
+/* Links */
+a { color: #2563eb; }
+a:visited { color: #7c3aed; }
+a:hover { text-decoration: underline; }
+a:focus { outline: 2px solid orange; }
