@@ -20,8 +20,7 @@ CSS3 selector fundamentals are still exactly right — but the toolkit has grown
 <p style="color: red;">Text</p>
 
 <!-- 2. Internal (fine for quick demos) -->
-<style>
-  p { color: red; }
+<style> p { color: red; }
 </style>
 
 <!-- 3. External (what we use from here on) -->
