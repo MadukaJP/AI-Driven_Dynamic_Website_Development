@@ -1,0 +1,65 @@
+:root {
+  --primary-color: dodgerblue;
+  --secondary-color: lightgray;
+  --spacing-1: 16px;
+  --spacing-2: 20px;
+  --spacing-3: 40px;
+}
+body{
+    font-family: "Inter" , sans-serif;
+}
+
+h1, h2 {
+    color:var(--primary-color);
+}
+
+h1{
+    font-weight:700;
+}
+h2{
+    font-family: "Dancing Script", sans-serif;
+    font-weight: 500
+}
+
+p{
+    margin-top: var(--spacing-3);
+    font-size: 16px;
+}
+li {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.card{
+     border: 1px solid black;
+     padding: 10px 0 0 0;
+     margin-top: 10px;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+}
+a:hover {
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid;
+
+}
+#socials {
+    margin-bottom: var(--spacing-3);
+}
+
+img {
+    border-radius: 50%;
+}
+
+.highlight {
+    color: red;
+}
+
+
+
+
