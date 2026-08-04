@@ -1,0 +1,194 @@
+:root {
+  --primary-color: dodgerblue;
+  --secondary-color: lightgray;
+  --spacing-1: 16px;
+  --spacing-2: 20px;
+  --spacing-3: 40px;
+  --spacing-4: 80px;
+  --spacing-5: 200px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2 {
+  color: var(--primary-color);
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+     font-family: "Dancing Script", sans-serif;
+     font-weight: 500;
+}
+
+
+
+p {
+  margin-top: var(--spacing-3);
+  font-size: 16px;
+  animation: fadeIn 6s ease-in;
+}
+
+li {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 10px 0 0 0;
+  margin: 10px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: background-color 1s ease;
+}
+
+a:hover {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+a:focus {
+  outline: 2px solid orange;
+}
+
+#socials {
+  margin-bottom: var(--spacing-3);
+}
+
+img {
+  height: 500px;
+  width: 500px;
+  border-radius: 50;
+  object-fit: cover;
+  border: 5px dotted red;
+  /* transition: height 1s ease, width 2s ease; */
+   transition: transform 1s ease; 
+}
+
+img:hover{
+    /* height: 100px; 
+    width: 100px;
+    /* opacity: 0.2;   */
+    transform: rotate(180deg) scale(0.5) translateX(-200px);
+    
+}
+
+.highlight {
+    color: red;
+}
+
+#animations { 
+    margin-top: var(--spacing-5);
+    text-align: center;
+    color: white;
+}
+#animations h2{
+    
+    font-family: "inter", sans-serif;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+
+#translateX{
+    background-color: blue;
+    transition: 6s ease;
+}
+
+#translateX:hover{
+    transform: translateX(200px);
+    background-color: red;
+}
+
+#translateY {
+    background-color: green;
+    transition: transform 1s ease;
+}
+
+#translateY:hover {
+    transform: translateY(-200px);
+}
+
+#rotate {
+    background-color: red;
+    transition: transform 1s ease;
+}
+
+#rotate:hover {
+    transform: rotate(360deg);
+}
+
+#scale {
+    background-color: purple;
+    transition: transform 1s ease;
+}
+
+#scale:hover {
+    transform: scale(1.5);
+}
+
+#opacity {
+    background-color: darkgoldenrod;
+    transition: opacity 1s ease;
+}
+#opacity:hover {
+    opacity: 0.5;
+}
+
+@keyframes fadeIn {
+    from {opacity:0; transform:translateX(-100%);}
+    to { opacity:1; transform:translateX(0); }
+}
+
+@keyframes rotate {
+    from{ transform: rotate(0); }
+    to {transform: rotate(300deg);}   
+}
+
+#kf-rotate {
+    background-color: red;
+    animation: rotate 2s linear infinite;
+}
+
+#rainbow {
+    background-color: red;
+    animation: rainbow 5s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { background-color: red; }
+    15%{ background-color: orange; }
+    30%{ background-color: yellow;}
+    45%{background-color: green;}
+    60%{background-color: blue;}
+    75%{background-color: indigo;}
+    100%{background-color: violet;}
+}
+ 
+#pulse { 
+    background-color: brown;
+    animation: pulse 5s linear infinite;
+}
+
+@keyframes pulse {
+    0%{transform: scale(0.95);opacity: 0.5;}
+    50%{transform: scale(1.05);opacity: 1;}
+    100%{transform: scale(0.95); opacity: 0.5;}
+}
