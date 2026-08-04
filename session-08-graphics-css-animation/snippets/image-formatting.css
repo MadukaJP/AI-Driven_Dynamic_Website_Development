@@ -1,0 +1,13 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 4px;
+  border: 2px solid #2563eb;
+}
