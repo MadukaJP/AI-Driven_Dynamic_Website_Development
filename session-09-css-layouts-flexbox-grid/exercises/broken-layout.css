@@ -1,0 +1,4 @@
+.nav {
+  display: flex;
+  text-align: center; /* this doesn't center flex items! */
+}

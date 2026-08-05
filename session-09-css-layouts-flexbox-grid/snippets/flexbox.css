@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.equal-columns {
+  display: flex;
+  gap: 16px;
+}
+.equal-columns > * {
+  flex: 1;
+}

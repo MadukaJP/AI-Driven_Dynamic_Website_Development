@@ -1,0 +1,17 @@
+.card-container {
+  container-type: inline-size;
+  container-name: card;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@container card (min-width: 400px) {
+  .card {
+    flex-direction: row;
+    align-items: center;
+  }
+}
