@@ -1,0 +1,23 @@
+/* Capstone stylesheet — grows session by session. Start here in Session 9. */
+
+:root {
+  --primary: #b45309;
+  --secondary: #78350f;
+  --bg: #fffbeb;
+  --text: #292524;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  color: var(--text);
+  background-color: var(--bg);
+  line-height: 1.6;
+}

@@ -1,0 +1,5 @@
+.nav {
+  display: flex;
+  justify-content: center; /* aligns flex items on the main axis */
+  align-items: center;
+}
