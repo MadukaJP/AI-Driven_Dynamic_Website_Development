@@ -1,0 +1,89 @@
+/* Capstone stylesheet — grows session by session. Start here in Session 9. */
+
+:root {
+  --primary: #b45309;
+  --secondary: #78350f;
+  --bg: #fffbeb;
+  --text: #292524;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  color: var(--text);
+  background-color: var(--bg);
+  line-height: 1.6;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  background-color: white;
+}
+
+
+.logo h1 {
+  margin: 0;
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+#hero {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: var(--spacing-lg) 0;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+#hero p {
+  font-size: 1.25rem;
+}
+
+
+#featured-dishes  {
+  padding: var(--spacing-lg) var(--spacing-lg);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+
+.card {
+  border: 2px solid var(--primary);
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+}
+
