@@ -8,6 +8,16 @@
 - Image mapping
 - `<div>` vs semantic tags — when each is right
 
+## What you'll build
+
+<p align="center">
+  <img
+    src="https://res.cloudinary.com/dywgweuum/image/upload/v1786056666/msedge_PazGg8Dlcn_jnpq48.png"
+    alt="What you'll build"
+    width="800"
+  />
+</p>
+
 ## Why it matters today
 
 Semantic tags aren't cosmetic — they tell browsers, screen readers, and search engines what each part of your page *means*, not just how it looks. A `<div>`-only page and a semantically marked-up page can look pixel-identical but behave very differently for accessibility and SEO. This matters more today than ever, since automated accessibility auditing (in browsers, in CI pipelines) increasingly checks for this directly.
