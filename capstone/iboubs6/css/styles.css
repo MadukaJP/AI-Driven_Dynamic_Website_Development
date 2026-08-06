@@ -16,6 +16,7 @@
 }
 
 body {
+  
   margin: 0;
   font-family: 'Inter', Arial, sans-serif;
   color: var(--text);
@@ -23,15 +24,14 @@ body {
   line-height: 1.6;
 }
 
-
 header {
-  display: flex;
+  display:flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--spacing-md);
   background-color: white;
-}
 
+}
 
 .logo h1 {
   margin: 0;
@@ -48,7 +48,7 @@ nav a {
   color: var(--text);
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s ease;
+   transition: color 0.2s ease;
 }
 
 nav a:hover {
@@ -62,7 +62,7 @@ nav a:hover {
   padding: var(--spacing-lg) 0;
 }
 
-#hero h1 {
+#hero h1{
   font-size: 2.5rem;
   margin-bottom: var(--spacing-sm);
 }
@@ -71,20 +71,18 @@ nav a:hover {
   font-size: 1.25rem;
 }
 
-
-#featured-dishes  {
-  padding: var(--spacing-lg) var(--spacing-lg);
+#featured-dishes {
+  padding: var(--spacing-lg);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 16px;
+  
 }
-
 
 .card {
   border: 2px solid var(--primary);
+  padding: 16px;
   background-color: white;
   padding: 16px;
   border-radius: 8px;
 }
-
-

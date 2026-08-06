@@ -15,28 +15,28 @@
   margin: 0;
 }
 
+/*wildcard selector */
+
 body {
-  margin: 0;
   font-family: 'Inter', Arial, sans-serif;
   color: var(--text);
   background-color: var(--bg);
   line-height: 1.6;
 }
 
-
 header {
   display: flex;
+  /* background-color: red; */
   justify-content: space-between;
   align-items: center;
   padding: var(--spacing-md);
   background-color: white;
 }
 
-
 .logo h1 {
-  margin: 0;
-  color: var(--primary);
+  color: (--primary);
   font-size: 1.5rem;
+ 
 }
 
 nav {
@@ -47,38 +47,39 @@ nav {
 nav a {
   color: var(--text);
   text-decoration: none;
-  font-weight: 500;
+  font: 500;
   transition: color 0.2s ease;
 }
 
 nav a:hover {
   color: var(--primary);
+ 
 }
 
 #hero {
   background-color: var(--primary);
   color: white;
   text-align: center;
-  padding: var(--spacing-lg) 0;
+  padding: var(--spacing-sm) 0;
 }
 
 #hero h1 {
   font-size: 2.5rem;
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+
 }
 
-#hero p {
+#hero p{
   font-size: 1.25rem;
+
 }
 
-
-#featured-dishes  {
-  padding: var(--spacing-lg) var(--spacing-lg);
+#featured-dishes {
+  padding: var(--spacing-lg);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
+  gap: var(--spacing-md);
 }
-
 
 .card {
   border: 2px solid var(--primary);
@@ -86,5 +87,3 @@ nav a:hover {
   padding: 16px;
   border-radius: 8px;
 }
-
-

@@ -1,48 +1,49 @@
-:root{
+:root {
     --primary-color: dodgerblue;
-    --secondary-color: lightgrey;
+    --secondary-color: lightgray;
     --spacing-1: 16px;
     --spacing-2: 20px;
     --spacing-3: 40px;
     --spacing-4: 80px;
     --spacing-5: 200px;
 }
-body{
-    font-family: "inter", sans-serif;
+
+body {
+    font-family: "Inter", sans-serif;
 }
 
-h1, h2{
+h1,
+h2 {
     color: var(--primary-color);
 }
 
 h1 {
-    font-weight: 400;
+    font-weight: 700;
 }
 
-h2{
-   font-family: "Dancing Script", sans-serif; 
-   font-weight: 500;
-
+h2 {
+    font-family: "Dancing Script", sans-serif;
+    font-weight: 500;
 }
-p{
-    margin-top: 100px;
+
+p {
+    margin-top: var(--spacing-3);
     font-size: 16px;
-    animation: fadeIn 2s linear;
+    animation: fadeIn 5s ease-in;
 }
 
-li{
+li {
     text-transform: uppercase;
     text-decoration: underline;
-}  
+}
 
 .card {
     border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-
+    padding: 10px 0 0 0;
+    margin-top: 10px;
 }
 
-a{
+a {
     display: inline-block;
     text-decoration: none;
     background-color: var(--primary-color);
@@ -52,34 +53,30 @@ a{
     transition: background-color 1s ease;
 }
 
-a:focus{
-    margin-bottom: 2px solid orange;
-}
-
 a:hover {
     background-color: white;
     color: var(--primary-color);
-    border: 1px solid var(--primary-color)
+    border: 1px solid;
 }
 
-#socials{
+#socials {
     margin-bottom: var(--spacing-3);
 }
 
 img {
     height: 500px;
     width: 500px;
-    border-radius: 100px;
+    border-radius: 50%;
     object-fit: cover;
     border: 5px dotted red;
-    /*transition: height is ease, width is ease;*/
+    /* transition: height 1s ease, width 2s ease; */
     transition: transform 1s ease;
 }
 
-img:hover{
-   /* height: 100px;
+img:hover {
+    /* height: 100px;
     width: 100px;
-    opacity: 0.2;*/
+    opacity: 0.2; */
     transform: rotate(180deg) scale(0.5) translateX(-200px);
 }
 
@@ -87,47 +84,44 @@ img:hover{
     color: red;
 }
 
-#animations{
+#animations {
     margin-top: var(--spacing-5);
     text-align: center;
     color: white;
 }
 
-#animations h2{
+#animations h2 {
     font-family: "Inter", sans-serif;
-    text-align: center;
 }
 
-.box{
-  width: 100px;
+.box {
+    width: 100px;
     height: 100px;
-    display: flex;  
-    justify-content: center;
-    align-items: center;
 }
-#translatex {
+
+#translateX {
     background-color: blue;
-    transition: transform 1s ease;
+    transition: 6s ease;
 }
 
-#translatex:hover {
-    transform: translatex(200px);
+#translateX:hover {
+    transform: translateX(200px);
+    background-color: red;
 }
 
-
-#translatey {
+#translateY {
     background-color: green;
     transition: transform 1s ease;
 }
 
-#translatey:hover {
-    transform: translatey(200px);
+#translateY:hover {
+    transform: translateY(-200px);
 }
 
 #rotate {
     background-color: red;
-    /*transition: transform 1s ease;*/
-    animation: rotate 2s ease infinite;
+    transition: transform 1s ease; 
+    
 }
 
 #rotate:hover {
@@ -135,7 +129,7 @@ img:hover{
 }
 
 #scale {
-    background-color: purple;
+    background-color: brown;
     transition: transform 1s ease;
 }
 
@@ -144,7 +138,7 @@ img:hover{
 }
 
 #opacity {
-    background-color: yellow;
+    background-color: darkgoldenrod;
     transition: opacity 1s ease;
 }
 
@@ -155,36 +149,33 @@ img:hover{
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translate(-100%);
+        transform: translateX(-100%);
+
     }
     to {
         opacity: 1;
-        transform: translatex(0);
+        transform: translasteX(0);
     }
 }
-
-@keyframes rotateInfinite {
+@keyframes rotate {
     from {
-        transform: rotate(0deg);
+        transform: rotate(0);
     }
     to {
-       transform: rotate(360deg); 
+        transform: rotate(300deg);
     }
 }
-
 #kf-rotate {
     background-color: red;
-    animation: rotateInfinite 2s linear infinite;
+    animation: rotate 2s linear infinite;
 }
-
 #rainbow {
     background-color: red;
-    animation: rainbow 2s linear infinite;
+    animation: rainbow 5s linear infinite;
 }
-
-@keyframes rainbow{
-    0%{
-        background-color: red;
+@keyframes rainbow {
+    0% {
+       background-color: red;
     }
     15%{
         background-color: orange;
@@ -192,34 +183,34 @@ img:hover{
     30%{
         background-color: yellow;
     }
-    45%{
+    45% {
         background-color: green;
     }
-    60%{
+    60% {
         background-color: blue;
     }
-    75%{
+    75% {
         background-color: indigo;
     }
-    100%{
+    100% {
         background-color: violet;
     }
 }
-
 #pulse {
     background-color: brown;
-    animation: pulsex 1s ease-in-out infinite;
+    animation: pulse 5s linear infinite;
 }
-@keyframes pulsex {
-   0%{
-    transform: scale(1);
-   }
-
-   50% {
-    transform: scale(1.1);
-   }
-
-   100% {
-    transform: scale(1);7
-   }
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.5;
+  }
 }
