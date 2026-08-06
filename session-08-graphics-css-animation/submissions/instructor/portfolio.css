@@ -101,7 +101,9 @@ img:hover {
 .box {
   width: 100px;
   height: 100px;
-  display: flex;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #translateX {
