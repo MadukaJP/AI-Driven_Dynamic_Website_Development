@@ -17,21 +17,19 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   color: var(--text);
   background-color: var(--bg);
   line-height: 1.6;
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
   background-color: white;
 }
-
 
 .logo h1 {
   margin: 0;
@@ -56,10 +54,10 @@ nav a:hover {
 }
 
 #hero {
-  background-color: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
   text-align: center;
-  padding: var(--spacing-lg) 0;
+  padding: var(--spacing-lg) var(--spacing-md);
 }
 
 #hero h1 {
@@ -71,19 +69,76 @@ nav a:hover {
   font-size: 1.25rem;
 }
 
-
-#featured-dishes  {
+#featured-dishes {
   padding: var(--spacing-lg) var(--spacing-lg);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
 
 .card {
   border: 2px solid var(--primary);
   background-color: white;
   padding: 16px;
   border-radius: 8px;
+  transition: 0.3s;
 }
 
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+
+.section-title {
+  text-align: center;
+  color: var(--primary);
+  margin: var(--spacing-lg) 0 0;
+}
+
+.card h3 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary);
+}
+
+
+nav a[aria-current="page"] {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px #78360f88;
+}
+
+
+.hours-aside {
+  background-color: white;
+  margin: var(--spacing-lg) auto;
+  max-width: 1200px;
+  border-radius: 8px;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-left: 4px solid var(--primary);
+}
+footer {
+    background-color: #7f320d;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+.hours-aside h3 {
+  color: var(--primary);
+}
+footer p {
+    margin: 0 0 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+}
