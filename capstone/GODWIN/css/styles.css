@@ -15,22 +15,24 @@
   margin: 0;
 }
 
-body { 
-  font-family: 'Inter', Arial, sans-serif;
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
   color: var(--text);
   background-color: var(--bg);
   line-height: 1.6;
 }
 
-header{
+header {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   padding: var(--spacing-md);
   background-color: white;
 }
 
-.Logo h1{
+.logo h1 {
+  margin: 0;
   color: var(--primary);
   font-size: 1.5rem;
 }
@@ -40,11 +42,10 @@ nav {
   gap: var(--spacing-md);
 }
 
-
 nav a {
   color: var(--text);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   transition: color 0.2s ease;
 }
 
@@ -52,34 +53,66 @@ nav a:hover {
   color: var(--primary);
 }
 
-#hero{
-  background-color: var(--primary);
+#hero {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
   text-align: center;
-  text-align: center;
-  padding: var(--spacing-lg) 0;
+  padding: var(--spacing-lg) var(--spacing-md);
 }
 
 #hero h1 {
   font-size: 2.5rem;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
 }
 
-#hero p{
-   font-size: 1.25rem;
+#hero p {
+  font-size: 1.25rem;
 }
 
-
-#featured-dishes  {
+#featured-dishes {
   padding: var(--spacing-lg) var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 2px solid var(--primary);
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.dish-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
 }
 
-.card{
-  border: 2px solid var(--primary);
-  background-color: white;
-  padding: 16px;
-  border-radius: 8px;
+
+.section-title {
+  text-align: center;
+  color: var(--primary);
+  margin: var(--spacing-lg) 0 0;
+}
+
+.card h3 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary);
+}
+
+av a[aria-current="page"] {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px #78360f6e;
+}
+
+
+ul {
+  list-style-type: circle;
 }
