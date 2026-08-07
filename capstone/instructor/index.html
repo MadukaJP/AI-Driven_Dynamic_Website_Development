@@ -1,58 +1,78 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Local Bites — Neighborhood Café</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <h1>Local Bites</h1>
-      </div>
 
-      <nav>
-        <a href="#" arial-current="page"> Home </a>
-        <a href="#"> Menu </a>
-        <a href="#"> About </a>
-        <a href="#"> Contact </a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Bites — Neighborhood Café</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<header>
+  <div class="logo">
+    <h1>Local Bites</h1>
+  </div>
 
-    <section id="hero">
-      <h1>Your Neighborhood Café</h1>
-      <p>Fresh, local, and delicious food made with love</p>
-    </section>
+  <nav aria-label="Main navigation">
+    <a href="#" aria-current="page"> Home </a>
+    <a href="#"> Menu </a>
+    <a href="#"> Contact </a>
+  </nav>
+</header>
+<main>
+  <section id="hero">
+    <h1>Your Neighborhood Café</h1>
+    <p>Fresh, local, and delicious food made with love</p>
+  </section>
 
-    <section id="featured-dishes">
-      <div class="card">
+  <section id="featured-dishes">
+    <h2 class="section-title">Featured Dishes</h2>
+
+    <div class="dish-grid">
+      <article class="card">
         <h3>Avocado Toast</h3>
         <p>
           Fresh avocado on artisan sourdough with cherry tomatoes and a drizzle
           of olive oil
         </p>
-      </div>
+      </article>
 
-      <div class="card">
+      <article class="card">
         <h3>Breakfast Burrito</h3>
         <p>
           Scrambled eggs, black beans, cheese, and salsa wrapped in a warm
           tortilla
         </p>
-      </div>
+      </article>
 
-      <div class="card">
+      <article class="card">
         <h3>Açai Bowl</h3>
         <p>Organic açai topped with granola, fresh berries, and honey</p>
-      </div>
-      
-      <div class="card">
+      </article>
+
+      <article class="card">
         <h3>Artisan Coffee</h3>
         <p>Locally roasted, ethically sourced beans brewed to perfection</p>
-      </div>
-    </section>
-   
-    <script src="js/main.js"></script>
-  </body>
+      </article>
+    </div>
+  </section>
+
+
+  <aside class="hours-aside">
+    <h3>Opening Hours</h3>
+    <ul>
+      <li>Mon–Fri: 7am – 8pm</li>
+      <li>Sat–Sun: 8am – 9pm</li>
+    </ul>
+  </aside>
+</main>
+
+  <footer>
+    <p>123 Main Street | (555) 123-4567 | hello@localbites.com</p>
+    <p>&copy; 2026 Local Bites. All rights reserved.</p>
+  </footer>
+
+
+<script src="js/main.js"></script>
+</body>
+
 </html>

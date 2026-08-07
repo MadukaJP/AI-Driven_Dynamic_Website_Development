@@ -18,6 +18,7 @@
 body {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   color: var(--text);
   background-color: var(--bg);
   line-height: 1.6;
@@ -27,6 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
   padding: var(--spacing-md) var(--spacing-lg);
   background-color: white;
 }
@@ -55,8 +57,10 @@ nav a:hover {
 
 #hero {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
   text-align: center;
+  padding: var(--spacing-lg) var(--spacing-md);
   padding: var(--spacing-lg) var(--spacing-md);
 }
 
@@ -80,6 +84,7 @@ nav a:hover {
   background-color: white;
   padding: 16px;
   border-radius: 8px;
+  transition: 0.3s;
 }
 
 .dish-grid {
@@ -108,5 +113,36 @@ nav a[aria-current="page"] {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px #78360f88;
+}
+
+
+.hours-aside {
+  background-color: white;
+  margin: var(--spacing-lg) auto;
+  max-width: 1200px;
+  border-radius: 8px;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-left: 4px solid var(--primary);
+}
+
+.hours-aside ul {
+  margin: 0;
+  padding-left: var(--spacing-md);
+}
+
+.hours-aside h3 {
+  color: var(--primary);
+}
+
+footer {
+  background-color: var(--secondary);
+  color: white;
+  text-align: center;
+  padding: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+footer p {
+  margin: var(--spacing-sm) 0;
 }
