@@ -1,64 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Local Bites — Neighborhood Café</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
-  <header>
-    <div class="logo">
-      <h1>Local bites</h1>
-    </div>
+<header>
+  <div class="logo">
+    <h1>Local Bites</h1>
+  </div>
 
-    <nav>
-    <a href="#">
-        Home
-      </a>
-      <a href="#">
-        Menu 
-      </a>
-      <a href="#">
-        About
-      </a>
-      <a href="#">
-        Contact
-      </a>
-    </nav>
-    </header>
+  <nav aria-label="Main Navigation">
+    <a href="#" aria-current="page"> Home </a>
+    <a href="#"> Menu </a>
+    <a href="#"> Contact </a>
+  </nav>
+</header>
+<main>
+  <section id="hero">
+    <h1>Your Neighborhood Café</h1>
+    <p>Fresh, local, and delicious food made with love</p>
+  </section>
 
-  <section id="hero" 
->
-    <h1>Your Neighbourhood Cafe</h1>
-    <p>Fresh, local, and delicious food made with love.</p>
-
-  </section> 
   <section id="featured-dishes">
-    <div class="card">
-       <h3>Avocado Toast</h3>
-        <p>
-          Fresh avocado on artisan sourdough with cherry tomatoes and a drizzle
-          of olive oil
-        </p>
-      </div>
-      <div class="card">
-        <h3>Breakfast Burrito</h3>
-        <p>
-          Scrambled eggs, black beans, cheese, and salsa wrapped in a warm
-          tortilla
-        </p>
-      </div>
-      <div class="card">
-        <h3>Açai Bowl</h3>
-        <p>Organic açai topped with granola, fresh berries, and honey</p>
-      </div>
-      <div class="card">
-        <h3>Artisan Coffee</h3>
-        <p>Locally roasted, ethically sourced beans brewed to perfection</p>
-      </div>
+    <h2 class="section-title">Featured Dishes</h2>
+
+  <div class="dish-grid">
+      <article class="card">
+      <h3>Avocado Toast</h3>
+      <p>
+        Fresh avocado on artisan sourdough with cherry tomatoes and a drizzle
+        of olive oil
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Breakfast Burrito</h3>
+      <p>
+        Scrambled eggs, black beans, cheese, and salsa wrapped in a warm
+        tortilla
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Açai Bowl</h3>
+      <p>Organic açai topped with granola, fresh berries, and honey</p>
+    </article>
+
+    <article class="card">
+      <h3>Artisan Coffee</h3>
+      <p>Locally roasted, ethically sourced beans brewed to perfection</p>
+    </article>
+  </div>
+
+  
+  </section>
+<aside class="hours-aside">
+  <h3>Opening Hours</h3>
+  <ul>
+        <li>Mon–Fri: 7am – 8pm</li>
+        <li>Sat–Sun: 8am – 9pm</li>
+  </ul>
+</aside>
+
+<footer class="footer">
+  123 Main Street|(555) 123-4567 hello@localbites.com<br>
+      ©2026 Local Bites. All rights reserved
+</footer>
+</main>
 
 
-  <script src="js/main.js"></script>
+
+
+<script src="js/main.js"></script>
 </body>
+
 </html>
