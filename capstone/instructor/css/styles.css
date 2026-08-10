@@ -93,7 +93,6 @@ nav a:hover {
   gap: 16px;
 }
 
-
 .section-title {
   text-align: center;
   color: var(--primary);
@@ -105,7 +104,6 @@ nav a:hover {
   color: var(--primary);
 }
 
-
 nav a[aria-current="page"] {
   color: var(--primary);
   border-bottom: 2px solid var(--primary);
@@ -115,7 +113,6 @@ nav a[aria-current="page"] {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px #78360f88;
 }
-
 
 .hours-aside {
   background-color: white;
@@ -145,4 +142,66 @@ footer {
 
 footer p {
   margin: var(--spacing-sm) 0;
+}
+
+#contact-form-section {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+.reservation-form {
+  background-color: white;
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  border: 2px solid var(--primary);
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: var(--spacing-sm);
+}
+
+
+.form-group input {
+  border: 2px solid rgb(209, 208, 208);
+  font: inherit;
+  width: 100%;
+  border-radius: 6px;
+  color: var(--text);
+  padding: var(--spacing-sm);
+  background-color: var(--bg);
+}
+
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px #ddd2c9;
+}
+
+
+.form-group span {
+  font-size: 12px;
+  color: #78716c;
+}
+
+.reservation-form .section-title {
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+
+}
+
+
+.form-row {
+  display: flex;
+}
+
+
+.form-row .form-group {
+  width: 50%;
 }
