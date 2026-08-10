@@ -1,0 +1,5 @@
+1. type="date"
+2. type="url"
+3. type="number" min="1" max="20"
+4. type="search"
+5. type="color"
