@@ -9,6 +9,10 @@ forms — all applied to the capstone.
 
 👉 **[Click here to see what you'll build today](https://local-bites.netlify.app/)**
 
+## CSS Drills
+
+👉 **[Click here to view today's CSS drills](https://css-drill.netlify.app/)**
+
 ## The build
 
 1. Review your capstone `index.html` and `contact.html` against the
