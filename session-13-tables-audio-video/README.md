@@ -14,7 +14,7 @@ Tables are for tabular data only (never for layout — that's what Grid/Flexbox 
 
 ## What you'll build
 
-https://local-bites.netlify.app/
+👉 **[Click here to see what you'll build today](https://local-bites.netlify.app/)**
 
 ## Tables — for data, never for layout
 
