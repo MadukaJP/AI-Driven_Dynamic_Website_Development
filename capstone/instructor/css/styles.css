@@ -164,7 +164,7 @@ footer p {
 }
 
 
-.form-group input {
+.form-group input, .form-group textarea {
   border: 2px solid rgb(209, 208, 208);
   font: inherit;
   width: 100%;
@@ -173,6 +173,7 @@ footer p {
   padding: var(--spacing-sm);
   background-color: var(--bg);
 }
+
 
 .form-group {
   margin-bottom: var(--spacing-md);
@@ -199,9 +200,32 @@ footer p {
 
 .form-row {
   display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
 }
 
 
 .form-row .form-group {
-  width: 50%;
+  /* flex-grow: 1; */
+  flex: 1;
+  min-width: 180px;
+}
+
+
+.submit-btn {
+  display: inline-block;
+  width: 100%;
+  padding: var(--spacing-md);
+  font: inherit;
+  font-weight: 600;
+  color: white;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover  {
+  background-color: var(--secondary);
 }

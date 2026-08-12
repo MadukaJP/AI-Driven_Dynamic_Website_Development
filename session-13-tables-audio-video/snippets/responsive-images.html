@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Responsive Images</title></head>
+<body>
+  <img
+    src="dish-800w.jpg"
+    srcset="dish-400w.jpg 400w, dish-800w.jpg 800w, dish-1200w.jpg 1200w"
+    sizes="(max-width: 600px) 400px, 800px"
+    alt="Grilled salmon with roasted vegetables"
+    loading="lazy">
+
+  <picture>
+    <source srcset="dish.webp" type="image/webp">
+    <source srcset="dish.jpg" type="image/jpeg">
+    <img src="dish.jpg" alt="Grilled salmon with roasted vegetables">
+  </picture>
+</body>
+</html>
