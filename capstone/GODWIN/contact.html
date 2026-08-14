@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Reservations — Local Bites</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<header>
+    <div class="logo">
+        <h1>Local Bites</h1>
+    </div>
+
+    <nav aria-label="Main navigation">
+        <a href="index/html"> Home </a>
+        <a href="#"> Menu </a>
+        <a href="contact.html" aria-current="page"> Contact </a>
+    </nav>
+</header>
+<main>
+    <section id="hero">
+        <h1>Contact & Reservations</h1>
+        <p>Book a table or just say hello</p>
+    </section>
+
+    <section id="contact-form-section">
+        <form class="reservation-form" method="post">
+            <h2 class="section-title">Make a Reservation</h2>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                <span>Format: 123-456-7890</span>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Party size</label>
+                <input type="number" id="guests" name="guests" placeholder="For how many people"
+                min="2"
+                max="20"
+                >
+            </div>
+
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time">
+                </div>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="message">Special requests</label>
+                <textarea id="message" name="message"
+                rows="4"
+                placeholder="Dietary restrictions, seating preferences, etc.">
+                    
+                </textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">
+                Request Reservation
+            </button>
+
+
+            
+
+
+        </form>
+
+    </section>
+
+</main>
+
+  <footer>
+    <p>123 Main Street | (555) 123-4567 | hello@localbites.com</p>
+    <div>
+        <h5>NEWSLETTER</h5>
+        <form class="newsletter-form">
+        <input type="email" class="newsletter-input" placeholder="Your email" required>
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+
+    </div>
+    <p>&copy; 2026 Local Bites. All rights reserved.</p>
+  </footer>
+
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
