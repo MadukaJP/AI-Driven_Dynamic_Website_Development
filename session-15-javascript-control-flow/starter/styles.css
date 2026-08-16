@@ -1,0 +1,97 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 20px;
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  background: #f8fafc;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+h1 {
+  margin: 0 0 20px;
+  color: #1e293b;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#add-btn {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#add-btn:hover { background: #16a34a; }
+
+#task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.task-item {
+  /* TODO: lay the checkbox, text, and delete button out in a row,
+     vertically centered, with a small gap between them.
+     Hint: display / align-items / gap */
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.task-item .task-text {
+  flex: 1;
+  color: #1e293b;
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.task-item .delete-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.empty-message {
+  color: #94a3b8;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.remaining-count {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  text-align: right;
+  margin: 8px 0 0;
+}
