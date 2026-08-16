@@ -18,6 +18,7 @@
 body {
   margin: 0;
   font-family: "Inter", Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   color: var(--text);
   background-color: var(--bg);
   line-height: 1.6;
@@ -27,6 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
   padding: var(--spacing-md) var(--spacing-lg);
   background-color: white;
 }
@@ -55,8 +57,10 @@ nav a:hover {
 
 #hero {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
   text-align: center;
+  padding: var(--spacing-lg) var(--spacing-md);
   padding: var(--spacing-lg) var(--spacing-md);
 }
 
@@ -89,7 +93,6 @@ nav a:hover {
   gap: 16px;
 }
 
-
 .section-title {
   text-align: center;
   color: var(--primary);
@@ -97,49 +100,188 @@ nav a:hover {
 }
 
 .card h3 {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
   color: var(--primary);
-  
-
-}
-.card:hover {
-  transform: translateY(-40px);
-  box-shadow: 0px 4px 12px #78360f89;
 }
 
 nav a[aria-current="page"] {
-  color: var(--secondary);
+  color: var(--primary);
   border-bottom: 2px solid var(--primary);
 }
 
-ul {
-  list-style-type: circle;
-} 
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px #78360f88;
+}
 
 .hours-aside {
   background-color: white;
   margin: var(--spacing-lg) auto;
-  max-width: 1200px; 
-  border-radius: 8px;     
-  padding:  var(--spacing-md) var(--spacing-lg);                                                                                  
+  max-width: 1200px;
+  border-radius: 8px;
+  padding: var(--spacing-md) var(--spacing-lg);
   border-left: 4px solid var(--primary);
-  border-right: 4px solid var(--primary);
+}
 
-}
-.hours-aside h3{
-  color: var(--primary);
-  margin-bottom: var(--spacing-md);
-}
-hours-aside ul {
+.hours-aside ul {
   margin: 0;
+  padding-left: var(--spacing-md);
 }
 
-footer{
-  background-color:var(--secondary) ;
-  padding: var(--spacing-lg) var(--spacing-md);
+.hours-aside h3 {
+  color: var(--primary);
 }
-footer p{
+
+footer {
+  background-color: var(--secondary);
   color: white;
   text-align: center;
-  
+  padding: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+footer p {
+  margin: var(--spacing-sm) 0;
+}
+
+#contact-form-section {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+.reservation-form {
+  background-color: white;
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  border: 2px solid var(--primary);
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: var(--spacing-sm);
+}
+
+
+.form-group input, .form-group textarea {
+  border: 2px solid rgb(209, 208, 208);
+  font: inherit;
+  width: 100%;
+  border-radius: 6px;
+  color: var(--text);
+  padding: var(--spacing-sm);
+  background-color: var(--bg);
+}
+
+
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px #ddd2c9;
+}
+
+
+.form-group span {
+  font-size: 12px;
+  color: #78716c;
+}
+
+.reservation-form .section-title {
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+
+}
+
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+
+.form-row .form-group {
+  /* flex-grow: 1; */
+  flex: 1;
+  min-width: 180px;
+}
+
+
+.submit-btn {
+  display: inline-block;
+  width: 100%;
+  padding: var(--spacing-md);
+  font: inherit;
+  font-weight: 600;
+  color: white;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover  {
+  background-color: var(--secondary);
+}
+
+
+
+
+
+.newsletter-title {
+  margin: var(--spacing-md) 0 var(--spacing-sm);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  max-width: 360px;
+  margin: 0 auto var(--spacing-md);
+}
+
+.newsletter input {
+  flex: 1;
+  min-width: 180px;
+  padding: var(--spacing-sm);
+  font: inherit;
+  color: var(--text);
+  border: none;
+  border-radius: 6px;
+}
+
+.newsletter button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font: inherit;
+  font-weight: 600;
+  color: white;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #d97706;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
 }
