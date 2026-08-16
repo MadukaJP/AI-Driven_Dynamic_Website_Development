@@ -1,0 +1,70 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
+  background: #f8fafc;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px 32px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 1.2rem;
+  color: #1e293b;
+}
+
+.subtitle {
+  margin: 0 0 20px;
+  color: #64748b;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+ul, .item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li, .item {
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  color: #1e293b;
+  font-size: 0.95rem;
+}
+
+.positive { border-left: 4px solid #22c55e; }
+.negative { border-left: 4px solid #ef4444; }
+.zero     { border-left: 4px solid #94a3b8; }
+
+.box {
+  background: #6366f1;
+  color: white;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.box:hover { background: #4f46e5; }
+
+@media (prefers-reduced-motion: reduce) {
+  .box { transition: none; }
+}
